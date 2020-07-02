@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs')  -%>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    
+    <%- include ('../partials/header.ejs') -%>
+    <h1>Products</h1>
+    <div id='allProducts'>
+        <%- include ('../partials/productCard.ejs', {product: products[0]}) -%> 
+        <%- include ('../partials/productCard.ejs', {product: products[1]}) -%> 
+        <%- include ('../partials/productCard.ejs', {product: products[2]}) -%> 
+    </div>
+    
+
+    <%- include ('../partials/scripts.ejs') -%> 
+</body>
+
+</html>

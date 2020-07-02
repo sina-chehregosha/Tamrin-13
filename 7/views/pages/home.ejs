@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs')  -%>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <%- include ('../partials/header.ejs') -%>
+    <div id="searchBox">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search a Product"
+                aria-label="Recipient's username" aria-describedby="basic-addon2" value="test">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="searchButton"><i
+                        class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <%- include ('../partials/scripts.ejs') -%>
+    <script src="/jquery-3.5.1.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
